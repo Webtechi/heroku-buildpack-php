@@ -93,6 +93,8 @@ build_command=$(cat <<BUILD_CMD
     --enable-bcmath \
     --with-readline \
     --disable-debug \
+    --with-freetype-dir=/usr \
+    --enable-gd-native-ttf \
     && make \
     && make install \
     && /app/vendor/php/bin/pear config-set php_dir /app/vendor/php \
